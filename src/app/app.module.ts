@@ -15,6 +15,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {HttpClientModule} from '@angular/common/http';
 import {MatTableModule} from '@angular/material/table';
 import {MatListModule} from '@angular/material/list';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     HttpClientModule,
     MatTableModule,
-    MatListModule
+    MatListModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

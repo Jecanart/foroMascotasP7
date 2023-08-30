@@ -7,7 +7,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProveedorDatosService {
 
-  private URL: string = 'http://localhost:3000/rest/usuario/findAll/json';
+  private URL: string = 'https://foromascotasrest-production.up.railway.app/rest/usuario/findAll/json';
+
+  private URLM : string = 'https://foromascotasrest-production.up.railway.app/rest/macota/findAll/json';
 
   constructor(private http:HttpClient) { }
 
@@ -15,6 +17,15 @@ export class ProveedorDatosService {
   getResponse(){
     return this.http.get(this.URL);
   }
+
+  getResponseM(){
+    return this.http.get(this.URLM);
+  }
+
+  getResponseC(DIR: string){
+    return this.http.get(DIR);
+  }
+  
 
 
 }

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  src: string ='https://i.imgur.com/346ep8V.jpeg'
+
 }
